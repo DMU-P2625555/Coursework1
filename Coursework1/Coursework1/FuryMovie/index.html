@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width"/>
+    <title>FURY</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<!-- Inside of the head, the first thing added was metadata regarding how the
+    web page will be viewed, the 'viewport' tag has been employed with
+    'width=device-width' to ensure that the User Interface (UI) will be scaled to fit any
+    device that is used to view the page. As a result of this all users regardless
+    of how they view the website will be have the same User Experience (UE).
+    Secondly, a link has been made to 'style.css', using a separate stylesheet
+    rather than placing individual styling in-line ensures that the code is
+    easier to read; by browsers and developers alike. -->
+
+<body>
+  <artilce>
+
+      <div>
+       <header>
+         <h1 id="FURY"> FURY </h1>
+
+       </header>
+      </div>
+
+<!-- An <h1> element has been used for the title of the webpage as this denotes to
+   the browser that this should be the most important heading. An 'id' attribute
+   has also been added in here for so that a link can be added into the bottom of
+    the <footer> in order to be browught back to the top of the webpage. -->
+
+   <nav>
+      <div class="container">
+         <div class="center">
+          <button>  <a href="index.html">HOME</a> </button>
+          <button>  <a href="cast.html">CAST</a> </button>
+         </div>
+      </div>
+   </nav>
+
+<!--  A <nav> element has been used here in order to define what is nested within
+  the element, the two buttons hold links to both the 'Home' and 'Cast' pages.
+  So, with this the browser and screen readers are aware that what is nested within the element
+  should be used for navigating the web page. This makes sure that the page is
+  accessible for people who have disibilityes.
+  As well as this both 'container and 'center' classes have been added for styling. -->
+
+
+      <div class="synopsis">
+         <h2> SYNOPSIS </h2>
+             <p> FURY, tells the gritty story of five men from the US Army’s Armoured
+          Division, attempt to put a stop to the Nazi regime as they roll through
+               western German countryside.</p>
+             <p>In the final days of the Second World War the Allies push the German War
+          Machine ever closer towards Berlin, yet the victors of this war still
+          hang in the balance with American soldiers on their last fighting legs
+          – as the end draws nearer, five unlikely companions from the Second
+          Armoured Division push their minds, bodies and their Tank ‘Fury’ to
+               their absolute limits.</p>
+             <p>‘Wardaddy’ (Brad Pitt) is joined by the likes of ‘Bible’ Swan
+          (Shia LaBeouf), Grady Travis (Jon Bernthal) and ‘Gordo’ Garcia
+               (Michael Peña) and ‘Red.’</p>
+             <p>For them, the war began in Northern Africa, from there: Italy, and then
+          to France, but just as their caterpillar tracks cross the French-German
+          border, Red is killed. It is now up to newbie: Norman Ellison
+          (Logan Lerman), a V-Corps Clerk Typist, thrown into the hands of these
+          battle hardened men, to steer Fury and her insatiable crew to victory.
+             </p>
+      </div>
+
+<!-- The 'synopsis' section of the webpage has been placed into another <div>
+in order to tell the browser that this shound be viewed as a seperate section
+to that of the header, this breaks up the web page into smaller blocks and allows
+screen readers to make better understanding of the page's layout. <p> elements
+have been used for the main body of text and <h2> element has been used to tell the
+browser that this is the next most important heading after <h1>. -->
+
+      <div>
+        <h2>TRAILER</h2>
+         <video controls style="max-width:100%" poster="../img/furytrailer.jpg" >
+          <source src="../vid/furyTrailer.mp4" type="video/mp4" />
+          <source src="../vid/furyTrailer.webm" type="video/webm" />
+          <source src="../vid/furyTrailer.ogv" type="video/ogg" />
+         </video>
+      </div>
+
+<!-- The next <div> element has the <video> tag nested within. Again, this
+allows screen readers to know that this shoiuld be seen as a new section within
+web page. The 'Controls' attribute provides a full set of playback controls for
+the attached video. It has been included to allow the user to chose when the
+video plays. This eliminates the possibility of the video automatically playing
+when the site loads. The 'style' attribute has also been included: "max-width:100%"
+ensures that the video player will not exceed the width of any device it is displayed on.
+
+A poster attribute has also been included so that an image sits on the video
+player until it is played. This avoids the first frame of the video being the
+default and fits in with what would be expected on other film websites.
+
+Three Sources have been used for the video element. The first one is the '.mp4'
+as that is what was wanted as the default, however '.webm' and '.ogg' versions
+have both been provided as fallbacks in case the browser does not suppot the
+original '.mp4' format. -->
+
+  <div>
+
+        <footer>
+            <p id="footerText"> P2625555 - Site created by Seamus O'Leary, TECH1015 Multimedia 1
+             Coursework. 2020/2021. </p>
+            <a href="https://www.imdb.com/title/tt2713180/">
+             <button> IMDB </button> </a>
+            <a href="https://www.rottentomatoes.com/m/fury_2015">
+             <button> ROTTEN TOMATOES </button> </a>
+             <br>
+            <a href="#FURY">
+             <button> Back to Top </button> </a>
+         </footer>
+
+  </div>
+  <!-- Links to the IMDb and RottenTomatoes pages on the film have been placed
+  inside of button elements. This allows for a larger aread to be clicked on which
+  makes things more accessible for diables users. An additional buttonhas been used
+  for the link to bring the user back to the top of the page.
+
+  A class attribute has also been included that links to the stylesheet for
+  additional height on the footer to compensate for the button sizes.
+   -->
+</body>
+
+</html>

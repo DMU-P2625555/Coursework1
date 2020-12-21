@@ -1,0 +1,181 @@
+header{
+  background-image: url("../img/furyimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 100px;
+  border-radius: 15px;
+}
+
+/* The <header> has been styled with a background-image spanning the length and
+width of the header, this gives the appearence of a 'banner', something like you
+might get at the top of a 'Twitter' or 'Facebook' profile. It has been set to
+'no-repeat' so that it is displayed as just one complete image. A 'border-radius'
+of 15px has also been added to give the header curver corners. This has been
+included so that it stays matching with the cast members below which also have
+similar borders.
+*/
+
+footer{
+  text-align: center;
+  font-size: 50%;
+  height: 50px;
+}
+
+/* The footer has been styled the same for both pages, this is
+in order to keep things uniform across the whole website. The text has been
+aligned to the centre and the height has been set to 50px to allow room for
+larger buttons for mobile users who would not be using a mouse. */
+
+.float-img{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  padding: 2px;
+  height: 130px;
+  width: 100px;
+  border: 5px solid #F0F8FF;
+  border-radius: 10px;
+}
+
+/* All image elements inside of the cast page have been set into the 'float-img'
+class. This is to ensure that they are all styled the same way. Firstly, the i
+mages have been floated to the left, this is so that the text for each individual
+cast member can be wrapped around them. A small amount of padding has then been
+added so that the surrounding border is not right up against the images. Again,
+the border radius has been curved by 10px, so that the style matches the other
+elements on the page with curved borders. Margins have then been added to the
+right, bottom and left sides of the image, this is so that surrounding elements
+do not bunch right up against it. */
+
+body{
+  background-color: #243447;
+}
+
+article{
+ border: 10px;
+}
+/* The article has been styled minimalistically, only a small border has been
+added so that the borders of other elements nested within it do not appear
+right on the edges of the web page.
+*/
+
+
+h1, h2, h3{
+  font-family: 'Courier New' , monospace;
+  font-weight: bolder;
+  color: GoldenRod;
+}
+
+/* All of the heading elements used on the page have been styled the same here
+to bring more uniformity to the page. A monospace font-family has been adopted
+as it was felt that this best represents the theme of the film, with it being
+an old war film, an old-fashioned typewriter style font has been used. As well
+as this it has been made bolder for extra emphasis on the headings. Lastly the
+colour chosen matches closely with that of the Logo of the 'Fury' movie itself.
+*/
+
+h1{
+  text-align: center;
+  padding-top: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+/* Headings 1 and 2 have then been further styled. both have been centrally
+aligned as they sit at the very top of the webpage, it was decided not to do the
+same with the 'h3' element as these sat within the 'cast-block' class where the
+paragraphs were aligned to the left.
+A small amount of padding was added to jsut the top of the 'h1' element as
+otherwise it would have bunched right to the top of the web page. */
+
+
+p{
+  color: #F0F8FF;
+}
+
+/* With a darker 'background-color' chosen for the body of the website, it was
+decided that the best colour for the text would be something brighter.
+*/
+
+blockquote{
+  color: #F0F8FF;
+}
+
+button{
+  background-color: GoldenRod;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* The inclusion of large buttons was decided as mobile users may struggle to hit
+smaller links with their fingers/thumbs, and using larger buttons takes
+nothing away from the UE of a desktop user. This makes the site more accessible
+for all users.
+*/
+
+
+.container{
+  height: 60px;
+  position: relative;
+}
+
+/* The div class labelled 'container' has the buttons from the top of the webpage
+nested within it, the height of the element has been adjusted to allow room for
+largr buttons and the position set to relative so than none of the surrounding
+gaps were filled in by neighbouring elements.
+*/
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The transform property has been used here in order to move both of the
+buttons positions within the element, the translate(x,y) value has been used
+with -50% on each axis so that they will sit directly in the middle of the element.
+*/
+
+.cast-block{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  border: 5px solid GoldenRod;
+  border-radius: 25px;
+}
+
+/* The information for each cast member have each been placed into individual
+divs with the same 'cast-block' class. This is so that each cast member can sit
+as its own smaller section, whilst maintaining a uniform look among the others.
+*/
+
+.synopsis{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  border: 5px solid GoldenRod;
+  border-radius: 25px;
+}
+
+/* Similarly to the cast members, the div containing the 'synopsis' section of
+the webpage has also been given its own class name, and has been styled exactly
+the same as each of the 'cast-block' divs. The padding on the left and right
+leaves room between the text within the element and the border that surrounds it.
+The border given to it is solid so that it is clearly defined, and the same colour
+has been chosen as the heading elements so that the colour scheme is kept the
+same across the webiste.
+As well as this the border-radius again, has been rounded by 25px, so that it
+is in-keeping with other elements on the page that also have rounded borders.
+ */
